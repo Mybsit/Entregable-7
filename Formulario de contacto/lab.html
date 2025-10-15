@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laboratorio formularios</title>
+
+     <!--Agregar etilos-->
+
+</head>
+<style>
+    body{
+        font-family: 'Times New Roman', Times, serif;
+        background-color:beige;
+        margin: 0px;
+        padding: 10px;
+    }
+    .contenedor{
+        background-color: rgb(255, 255, 255);
+        width: 600px;
+        margin: 0 auto;
+        padding: 20px;
+        border-radius: 9px;
+        box-shadow: 0 0 10px rgb(3,3,3);
+    }
+    h1{
+        text-align: center;
+    }
+
+    label{
+        display: block;
+        font-family: 'Times New Roman', Times, serif;
+        margin: 10px 5px 5px;
+        font-weight: bold;
+    }
+    input{
+        width: 50%;
+        padding: 6px;
+        margin-bottom: 10px;
+        border: 1px solid rgb(99, 99, 94);
+        border-radius: 8px;
+    }
+    input[type="submit"]{
+
+        background-color: rgb(209, 209, 170);
+        color: rgb(0, 0, 0);
+        border: none;
+        border-radius: 7px;
+        cursor: pointer;
+        
+
+    }
+    
+        
+
+    
+    
+
+    
+</style>
+<body>
+<div class="contenedor">
+    <h1>Formulario de contactos</h1>
+
+    <form action="#">
+        <label for="Nombre">Nombre</label>
+        <input type="text" name="Nombre de usuario" id="Nombre" placeholder="Nombre" minlength="3" maxlength="30"
+         required>
+         <br> </br>
+
+         <label for="Apellido">Apellido</label>
+         <input type="text" name="Primer apellido" id="Primer apellido" placeholder="Apellido" minlength="5" maxlength="20" 
+         required>
+         <br> </br>
+
+        <label for="Correo">Correo</label>
+        <input type="email" name="Correo de usuario" id="corre" placeholder="Correo" minlength="3" maxlength="100" 
+        required>
+        <br> </br>
+          
+        <label for="Telefono"> Telefono</label>
+        <input type="tel" name="Telefono del usuario" id="Telefono" placeholder="Telefono">
+        <br> </br>
+        
+        <label for="Mensaje">Mensaje</label>
+        <textarea name="Mensaje" id="Mensaje" rows="4"></textarea>
+        <br> </br>
+
+        <label for="Nacionalidad">Selecciona tu pais</label>
+        <select name="Nacionalidad" id="Nacionalidad">
+            <option value="COL">Colombia</option>
+            <option value="MEX" selected disabled>Mexico</option>
+            <option value="ESP">España</option>
+            <option value="VEN">Venezuela</option>
+            <option value="POR">Portugal</option>
+            <option value="BRA">Brasil</option>
+            <option value="ARG"selected disabled>Argentina</option>
+            <option value="POL">Polonia</option>
+
+        </select>
+        
+       <input type="submit" value="Enviar informacion">
+
+</form>   
+</body>
+</html>
